@@ -39,7 +39,7 @@
        <td><%=cus.getPhone()%></td>
        <td><%=cus.getEmail()%></td>
        <td><%=cus.getAddress()%></td>
-       <td><a href="">Sửa</a></td>
+       <td><a href="<%=request.getContextPath()%>/customer?action=EDIT&id=<%=cus.getId()%>">Sửa</a></td>
        <td><a onclick="return confirm('Bạn co chắc chắn muốn xóa không ?')" href="<%=request.getContextPath()%>/customer?action=DELETE&id=<%=cus.getId()%>">Xóa</a></td>
    </tr>
    <%
